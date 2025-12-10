@@ -1,0 +1,39 @@
+{
+    "name"             : "phpico/clock",
+    "description"      : "PSR-20 compliant clock package.",
+    "type"             : "library",
+    "license"          : "MIT",
+    "minimum-stability": "stable",
+    "version"          : "0.1.0",
+    "scripts"          : {
+        "mago": "mago analyze",
+        "test": "phpunit -c phpunit.xml.dist",
+        "qa"  : [
+            "@mago",
+            "@test"
+        ]
+    },
+    "require"          : {
+        "php"      : "^8.4",
+        "psr/clock": "^1.0"
+    },
+    "autoload"         : {
+        "psr-4": {
+            "Phpico\\Clock\\": "src/"
+        }
+    },
+    "autoload-dev"     : {
+        "psr-4": {
+            "Phpico\\Clock\\Tests\\": "tests/"
+        }
+    },
+    "require-dev"      : {
+        "carthage-software/mago": "^1.0.0-rc.12",
+        "phpunit/phpunit"       : "^12.5"
+    },
+    "config"           : {
+        "allow-plugins": {
+            "carthage-software/mago": true
+        }
+    }
+}
