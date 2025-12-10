@@ -7,7 +7,7 @@
     failOnRisky="true"
 >
     <testsuites>
-        <testsuite name="phpico/clock test suite">
+        <testsuite name="php-pico/clock test suite">
             <directory>tests/</directory>
         </testsuite>
     </testsuites>

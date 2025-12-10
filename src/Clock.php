@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Phpico\Clock;
+namespace PhpPico\Clock;
 
 use DateMalformedStringException;
 use DateTimeImmutable;

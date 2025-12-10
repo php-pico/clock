@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Phpico\Clock\Tests;
+namespace PhpPico\Clock\Tests;
 
 use DateTimeImmutable;
-use Phpico\Clock\Clock;
+use PhpPico\Clock\Clock;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

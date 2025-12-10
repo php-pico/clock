@@ -1,5 +1,5 @@
 {
-    "name"             : "phpico/clock",
+    "name"             : "php-pico/clock",
     "description"      : "PSR-20 compliant clock package.",
     "type"             : "library",
     "license"          : "MIT",
@@ -19,12 +19,12 @@
     },
     "autoload"         : {
         "psr-4": {
-            "Phpico\\Clock\\": "src/"
+            "PhpPico\\Clock\\": "src/"
         }
     },
     "autoload-dev"     : {
         "psr-4": {
-            "Phpico\\Clock\\Tests\\": "tests/"
+            "PhpPico\\Clock\\Tests\\": "tests/"
         }
     },
     "require-dev"      : {
