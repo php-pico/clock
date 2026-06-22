@@ -24,7 +24,7 @@ final class Clock implements ClockInterface
     public static function setTestNow(string|DateTimeImmutable|null $testNow): void
     {
         if (is_string($testNow)) {
-            $testNow = new DateTimeImmutable(datetime: $testNow);
+            $testNow = new DateTimeImmutable($testNow);
         }
 
         self::$testNow = $testNow;
@@ -51,4 +51,3 @@ final class Clock implements ClockInterface
         return self::getTestNow() ?? new DateTimeImmutable();
     }
 }
-
