@@ -13,7 +13,7 @@
         ]
     },
     "require"     : {
-        "php": "^8.4",
+        "php": "^8.5",
         "psr/clock": "^1.0"
     },
     "autoload"    : {
@@ -27,8 +27,8 @@
         }
     },
     "require-dev" : {
-        "carthage-software/mago": "^1.0.0-rc.12",
-        "phpunit/phpunit": "^12.5"
+        "carthage-software/mago": "^1.30.0",
+        "phpunit/phpunit": "^12.5.30"
     },
     "config"      : {
         "allow-plugins": {
