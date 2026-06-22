@@ -1,4 +1,4 @@
-# README
+# php-pico/clock
 
 PSR-20 compliant clock package.
 
