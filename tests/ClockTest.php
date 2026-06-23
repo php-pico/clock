@@ -14,7 +14,11 @@ final class ClockTest extends TestCase
     #[Test]
     public function get_now(): void
     {
-        $this->assertInstanceOf(DateTimeImmutable::class, new Clock()->now(), 'Clock::now() should return a DateTimeImmutable instance');
+        $this->assertInstanceOf(
+            DateTimeImmutable::class,
+            new Clock()->now(),
+            'Clock::now() should return a DateTimeImmutable instance',
+        );
     }
 
     #[Test]
@@ -25,7 +29,11 @@ final class ClockTest extends TestCase
         $this->assertNull(Clock::getTestNow(), 'Clock::getTestNow() should return NULL before testNow is set.');
 
         Clock::setTestNow($testNow);
-        $this->assertSame($testNow, Clock::getTestNow(), 'Clock::getTestNow() should return the $testNow DateTimeImmutable.');
+        $this->assertSame(
+            $testNow,
+            Clock::getTestNow(),
+            'Clock::getTestNow() should return the $testNow DateTimeImmutable.',
+        );
         $this->assertSame($testNow, new Clock()->now(), 'Clock::now() should return the $testNow DateTimeImmutable.');
     }
 }
